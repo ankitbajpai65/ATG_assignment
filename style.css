@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+}
+
+/* NAVBAR */
+
+.header {
+    /* border: 2px solid red; */
+    height: 7.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.header h1 {
+    color: #27A365;
+}
+
+.header input {
+    width: 25em;
+    font-size: 1.4rem;
+    border-radius: 2.1rem;
+    background: #F2F2F2;
+    font-weight: 500;
+    padding: 0.7rem 2rem;
+    border: none;
+    outline: none;
+}
+
+.header button {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+}
+
+.header a:nth-child(1) {
+    color: #2E2E2E;
+}
+
+#free {
+    color: #2F6CE5;
+}
+
+#myModal {
+    display: none;
+}
+
+/* Mobile header  */
+#mobNav div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #868E96;
+
+}
+
+.mobHeader {
+    display: none;
+}
+
+.displayMobHeader {
+    display: block;
+}
+
+/* HOME PAGE */
+.home {
+    /* border: 2px solid red; */
+    height: 44rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: url('images/home.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home div {
+    position: absolute;
+    left: 20rem;
+    top: 35.8rem;
+    color: white;
+}
+
+.home div h1 {
+    font-size: 36px;
+    line-height: 47px;
+    font-weight: 700;
+}
+
+.home div p {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+.homeNavDiv ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeNavDiv ul a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #8A8A8A;
+}
+
+.home button {
+    position: absolute;
+    right: 3rem;
+    top: 6rem;
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+    background: transparent;
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.displayHomeBtn {
+    display: block;
+}
+
+.homeBtnClass {
+    display: none;
+}
+
+#homeIcon {
+    position: absolute;
+    left: 3rem;
+    top: 5.5rem;
+    transform: scale(1.5);
+    font-size: 11rem;
+    color: #FFFFFF;
+}
+
+.displayHomeIcon {
+    display: block;
+}
+
+.removeHomeIcon {
+    display: none;
+}
+
+.homeNav {
+    display: flex;
+    align-items: center;
+}
+
+
+
+#homeNavMob select {
+    background: #F1F3F5;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #212529;
+    padding: 0.8rem 1rem;
+    border: none;
+    outline: none;
+}
+
+/* #homeNavMob {
+    display: none
+} */
+
+.removeHomeNavMob {
+    display: none;
+}
+
+.displayHomeNavMob {
+    display: block;
+}
+
+
+/* .navDiv {
+    border-bottom: 1px solid grey;
+} */
+
+.btnDiv {
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid grey; */
+}
+
+.postBtn {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #000000;
+    background: #EDEEF0;
+}
+
+.joinBtn {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: white;
+    background: #2F6CE5;
+}
+
+.homeNavDiv hr {
+    width: 84%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+/* CARDS */
+.card-img-top {
+    height: 22rem;
+    width: 100%
+}
+
+.card-type {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 19px;
+    color: #5C5C5C;
+}
+
+.card-body>button {
+    font-weight: 600;
+    font-size: 13px;
+    color: #02B875;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.profileDiv img {
+    height: 4rem;
+    width: 5.5rem;
+    border-radius: 50%;
+}
+
+.profileDiv h3 {
+    font-size: 1.8rems;
+}
+
+.profileDiv p {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    color: #525252;
+    margin-bottom: 0;
+}
+
+.profileDiv button {
+    width: 3rem;
+    border: none;
+    padding: 0.5rem;
+}
+
+.rightSide p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/* signup modal */
+.modal-content {
+    height: 45rem;
+    width: 73.6rem;
+}
+
+.alert {
+    color: #008A45;
+    background: #EFFFF4;
+    border-radius: 8px 8px 0px 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#closeModal {
+    position: absolute;
+    filter: invert(120%);
+    z-index: 2;
+    /* color: white; */
+    top: -2rem;
+    right: -2rem;
+    opacity: 1;
+    /* background: white; */
+}
+
+.signupForm input {
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    background: #F7F8FA;
+    color: #8A8A8A;
+    border: 1px solid #D9D9DB;
+    border-radius: 2px 2px 0px 0px;
+}
+
+.createBtn {
+    background: #2F6CE5;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    padding: 0.6rem;
+}
+
+.fbBtn,
+.gBtn {
+    font-size: 1.3rem;
+    padding: 0.6rem;
+    background: #FFFFFF;
+    border: 0.6px solid #D9D9DB;
+    border-radius: 2px;
+}
+
+.fbIcon {
+    color: #1877F2;
+}
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+    .home div {
+        position: absolute;
+        left: 3rem;
+        top: 33rem;
+    }
+}
