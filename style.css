@@ -349,6 +349,10 @@ html {
         left: 3rem;
         top: 33rem;
     }
+
+    .home {
+        margin-top: 0rem;
+    }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {

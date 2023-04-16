@@ -19,7 +19,7 @@ if (window.innerWidth <= 768) {
     homeBtn.classList.add('displayHomeBtn')
 
     let homeIcon = document.querySelector('#homeIcon');
-    homeIcon.classList.remove('removeHomeIcon')
+    homeIcon.classList.remove('removeHomeIcon');
     homeIcon.classList.add('displayHomeIcon')
 }
 
