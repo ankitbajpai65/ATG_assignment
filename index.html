@@ -20,7 +20,7 @@
             <!-- <a href="">
  
             </a> -->
-            <button type="button" id="signupBtn" class="btn btn-lg" data-toggle="modal" data-target="#myModal">
+            <button type="button" class="signupBtn btn btn-lg" data-toggle="modal" data-target="#myModal">
                 <span>Create account.</span>
                 <span id="free"> It's free</span>
                 <i class="bi bi-caret-down-fill ms-2 fs-6"></i>
@@ -35,8 +35,8 @@
         </div>
     </div>
 
-    <!-- SIGNUP -->
-    <div id="myModal" class="modal" role="dialog">
+    <!-- SIGNUP MODAL-->
+    <div id="signupModal" class="modal" role="dialog">
         <div class="modal-dialog modal-dialog-centered">
             <!-- Modal content-->
             <div class="modal-content">
@@ -46,17 +46,16 @@
                     Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼
                 </div>
                 <div class="row d-flex align-items-center">
-                    <h1 class="mb-4 mt-4 col-5 ms-5">Create account</h1>
-                    <div class="offset-2 col-4 mt-4">
-                        <a href="" class="text-decoration-none">
-                            <span class="text-secondary">Already have an account? </span>
-                            <span class="text-primary">Sign In</span>
-                        </a>
+                    <h1 class="mb-4 mt-4 col-5 ms-5 fw-bold">Create account</h1>
+                    <div class="offset-1 col-5 mt-4">
+                        <span class="text-secondary">Already have an account? </span>
+                        <span class="text-primary">
+                            <button class="btn text-primary p-0" id="loginBtn">Sign in</button>
+                        </span>
                     </div>
                 </div>
-                <div class="">
+                <div>
                     <div class="offset-1 col-6">
-
                         <form action="" class="signupForm">
                             <div class="row w-100 m-auto">
                                 <input type="text" class="col-6" placeholder="First Name">
@@ -74,6 +73,53 @@
                                 <i class="gIcon bi bi-google text-danger"></i>
                                 Sign up with Google
                             </button>
+                        </form>
+                    </div>
+                    <div class="col-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGIN MODAL -->
+
+    <div id="loginModal" class="modal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <button type="button" id="closeLoginModal" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                <div class="alert text-center" role="alert">
+                    Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼
+                </div>
+                <div class="row d-flex align-items-center">
+                    <h1 class="mb-4 mt-4 col-5 ms-5 fw-bold">Sign In</h1>
+                    <div class="offset-2 col-4 mt-4">
+                        <span class="text-secondary">Don't have an account? </span>
+                        <span class="text-primary">
+                            <button class="btn text-primary" id="signupButton">Create new for free!</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="offset-1 col-6">
+                        <form action="" class="signupForm">
+                            <input type="email" class="col-12" placeholder="Email">
+                            <input type="password" class="col-12" placeholder="Password">
+                            <button class="createBtn col-12 btn btn-primary mt-4 mb-3">Create Account</button>
+                            <button class="fbBtn col-12 btn mt-4">
+                                <i class="fbIcon bi bi-facebook"></i>
+                                Sign up with Facebook
+                            </button>
+                            <button class="gBtn col-12 btn mt-4">
+                                <i class="gIcon bi bi-google text-danger"></i>
+                                Sign up with Google
+                            </button>
+
+                            <a href="" class="text-decoration-none d-block text-black text-center mt-4 fs-5">Forget
+                                Password</a>
                         </form>
                     </div>
                     <div class="col-6">

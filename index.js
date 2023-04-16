@@ -23,16 +23,41 @@ if (window.innerWidth <= 768) {
     homeIcon.classList.add('displayHomeIcon')
 }
 
-let signupBtn = document.getElementById('signupBtn');
+let signupBtn = document.querySelector('.signupBtn');
 signupBtn.addEventListener('click', () => {
-    console.log('hello');
-    let modal = document.getElementById('myModal')
+    console.log('signup click');
+    let modal = document.getElementById('signupModal')
+    let login = document.getElementById('loginModal')
+    if (login.style.display === 'block')
+        login.style.display = 'none'
     modal.style.display = 'block'
+})
+let signupButton = document.querySelector('#signupButton');
+signupButton.addEventListener('click', () => {
+    console.log('signup click');
+    let signup = document.getElementById('signupModal')
+    let login = document.getElementById('loginModal')
+    signup.style.display = 'block'
+    login.style.display = 'none'
+})
+let loginBtn = document.getElementById('loginBtn');
+loginBtn.addEventListener('click', () => {
+    console.log('login click');
+    let signup = document.getElementById('signupModal')
+    let login = document.getElementById('loginModal')
+    signup.style.display = 'none'
+    login.style.display = 'block'
 })
 
 let close = document.getElementById('closeModal');
 close.addEventListener('click', () => {
     console.log('hello');
-    let modal = document.getElementById('myModal')
+    let modal = document.getElementById('signupModal')
+    modal.style.display = 'none'
+})
+let closeLoginModal = document.getElementById('closeLoginModal');
+closeLoginModal.addEventListener('click', () => {
+    console.log('hello');
+    let modal = document.getElementById('loginModal')
     modal.style.display = 'none'
 })
